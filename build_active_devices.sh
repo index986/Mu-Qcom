@@ -54,6 +54,6 @@ for Device in $DEVICES; do
 		done
 	else
 		# If device don't have it just run build script
-		bash ./build_uefi.sh -d $Device -r $_TARGET_BUILD_MODE || exit $?
+		bash ./build_uefi.sh -d pong -r DEBUG || exit $?
 	fi
 done
